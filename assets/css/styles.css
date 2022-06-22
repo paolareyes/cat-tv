@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Rubik+Moonrocks&display=swap');
+
+/* CSS Variables */
+
+:root {
+    /* colors */ 
+    --clr-yellow: 37, 89%, 67%;
+    --clr-white: 31, 57%, 93%;
+    --clr-pink: 8, 71%, 86%;
+    --clr-blue: 165, 15%, 58%;
+    --clr-red: 1, 81%, 73%;
+
+    /* font-sizes */
+
+    /* font-families */
+    --ff-cursive: font-family: 'Rubik Moonrocks', cursive;
+    --ff-serif: font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------------------ */
+/* Reset                    */
+/* ------------------------ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* set up the body */
+
+body {
+    font-family: var(--ff-serif);
+    font-size: var(--fs-400);
+    background: hsl( var(--clr-white));
+    color: hsl( var(--clr-blue));
+    line-height:  1.5;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    overflow-x: hidden;
+}
+
+/* makes images easier to work with */
+img,
+picture {
+  max-width: 100%;
+}
+
+/* makes form elements easier to work with */
+input,
+button,
+textarea,
+select{
+  font: inherit;
+}
+
+/* remove aniamtions for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after{
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
